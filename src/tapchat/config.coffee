@@ -65,6 +65,21 @@ Config =
       Program.prompt 'Choose a port [8067]: ', (port) ->
         config.port = port || 8067
         over()
+		
+	queue.perform (over) =>
+      Program.prompt 'Insert the WEBIRC user: ', (cloakUser) ->
+        config.cloakUser = cloakUser
+        over()
+
+	queue.perform (over) =>
+      Program.prompt 'Insert the WEBIRC password: ', (cloakPasswd) ->
+        config.cloakPasswd = cloakPasswd
+        over()
+	
+	queue.perform (over) =>
+      Program.prompt 'Insert the appended domain: ', (domain) ->
+        config.domain = domain
+        over()
 
     initialUser = {}
 

@@ -57,6 +57,9 @@ class Connection extends EventEmitter
       secure:      !!options.is_ssl
       userName:    options.user_name
       realName:    options.real_name
+	  cloakUser:   config.cloakUser
+	  cloakPasswd: config.cloakPasswd
+	  ircvHost:    "#{options.nick}.#{config.domain}"
       password:    options.server_pass
       autoConnect: false
       retryCount:  5
