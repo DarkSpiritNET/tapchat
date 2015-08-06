@@ -5,5 +5,6 @@
 *.dylib
 *.o
 *.lock-wscript
+npm-debug.log
 
 node_modules/

@@ -59,7 +59,7 @@ class Connection extends EventEmitter
       realName:    options.real_name
 	  cloakUser:   config.cloakUser
 	  cloakPasswd: config.cloakPasswd
-	  ircvHost:    "#{options.nick}.#{config.domain}"
+	  ircvHost:    "#{options.user_name}.#{config.domain}"
       password:    options.server_pass
       autoConnect: false
       retryCount:  5
